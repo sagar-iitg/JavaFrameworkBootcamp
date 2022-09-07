@@ -1,6 +1,7 @@
 package com.example.demo.services;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Component;
 
@@ -38,7 +39,42 @@ public class BookService {
     	
     	
     }
+
+
+	//adding the book
+	public void addBook(Book b){
+    	
+    	//reference variable
+    	list.add(b);
+    	
+    }
+	//delete by id
+	public void deleteByID(int id){
+
+	
+    	list=list.stream().filter(book->book.getId()!=id)
+		.collect(Collectors.toList());
+
+
+	}
     
+	//update by id
+	public void updateBook(Book book,int id)
+	{
+
+	
+
+    	list=list.stream().map(b->{
+				if(b.getId()==id){
+
+					b.setName(book.getName());
+				}
+
+			return b;
+		}).collect(Collectors.toList());
+
+
+	}
 
     
     
