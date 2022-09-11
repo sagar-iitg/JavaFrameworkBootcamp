@@ -11,8 +11,12 @@ public class Student {
 	private int id;
 	private String name;
 	private String city;
+	private Certificate certi;
 	
 	
+	
+
+
 	public Student()
 	{
 		super();
@@ -64,6 +68,23 @@ public class Student {
 		return "Student [id=" + id + ", name=" + name + ", city=" + city + "]";
 	}
 	
+	public Certificate getCerti() {
+		return certi;
+	}
+
+
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
+	}
+
+
+	public Student(int id, String name, String city, Certificate certi) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.city = city;
+		this.certi = certi;
+	}
 	
 	
 	

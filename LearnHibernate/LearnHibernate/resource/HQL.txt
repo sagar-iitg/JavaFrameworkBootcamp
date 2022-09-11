@@ -1,0 +1,12 @@
+------
+
+get()
+load()
+
+
+How to load complex data?
+
+HQL-Hibernate Query Language
+
+
+

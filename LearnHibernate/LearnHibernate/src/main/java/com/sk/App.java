@@ -29,7 +29,7 @@ public class App
         //create Student
         Student st=new Student(1,"sagar kumar","Giridih");
         Student st1=new Student();
-        Student st2=new Student();
+        Student st2=new  Student();
         st2.setId(3);
         st2.setCity("Muzzafarpur");
         st2.setName("Ankit kumar");
